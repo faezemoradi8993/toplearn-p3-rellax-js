@@ -1,0 +1,40 @@
+.wolf {
+    background-image: url(../images/www.svg);
+    background-size : cover;
+    height          : 100vh;
+    position        : relative;
+    display         : flex;
+
+
+    .wolf-title {
+        text-align    : center;
+        color         : white;
+        padding-bottom: 50px;
+
+        h1 {
+            font-size     : 30px;
+            padding-bottom: 60px;
+        }
+
+        p {
+            font-size  : 20px;
+            text-shadow: 0px 0px 5px #111;
+        }
+
+
+    }
+
+    .wolf-caption {
+        width: 100%;
+
+        p {
+            font-size  : 17px;
+            color      : black;
+            font-weight: 900;
+            line-height: 2;
+            text-shadow: 0px 0px 5px #fff;
+            text-align : justify;
+
+        }
+    }
+}

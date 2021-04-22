@@ -1,0 +1,107 @@
+.container {
+    width : 70%;
+    margin: auto;
+}
+
+.overlay {
+    top                : 0%;
+    right              : 0%;
+    bottom             : 0;
+    left               : 0;
+    position           : absolute;
+    // background-color: rgba($color: #2c157c, $alpha: 0.7);
+}
+
+.btn {
+    cursor                   : pointer;
+    position                 : relative;
+    padding                  : 10px 20px;
+    background               : white;
+    font-size                : 28px;
+    border-top-right-radius  : 10px;
+    border-bottom-left-radius: 10px;
+    transition               : all 1s;
+
+    &:after,
+    &:before {
+        content   : " ";
+        width     : 10px;
+        height    : 10px;
+        position  : absolute;
+        border    : 0px solid #fff;
+        transition: all 1s;
+    }
+
+    &:after {
+        top        : -1px;
+        left       : -1px;
+        border-top : 5px solid black;
+        border-left: 5px solid black;
+    }
+
+    &:before {
+        bottom       : -1px;
+        right        : -1px;
+        border-bottom: 5px solid black;
+        border-right : 5px solid black;
+    }
+
+    &:hover {
+        border-top-right-radius  : 0px;
+        border-bottom-left-radius: 0px;
+
+        // background:rgba(0,0,0,.5);
+        // color:white;
+        &:before,
+        &:after {
+
+            width          : 100%;
+            height         : 100%;
+            // border-color:white;
+        }
+    }
+}
+
+////////
+.menu-item {
+    color          : #fff;
+    cursor         : pointer;
+    font-size      : 16px;
+    position       : relative;
+    text-decoration: none;
+
+}
+
+.menu-item:hover,
+.menu-item:active {
+    text-decoration: none;
+}
+
+.menu-item:after,
+.menu-item:before {
+    backface-visibility: hidden;
+    border             : 1px solid rgba(#fff, 0);
+    bottom             : 0px;
+    content            : " ";
+    display            : block;
+    margin             : 5px auto;
+    position           : relative;
+    transition         : all 280ms ease-in-out;
+    width              : 0;
+}
+
+.menu-item:hover:after,
+.menu-item:hover:before {
+    backface-visibility: hidden;
+    border-color       : #fff;
+    transition         : width 350ms ease-in-out;
+    width              : 70%;
+}
+
+.menu-item:hover:before {
+    bottom: auto;
+    top   : 0;
+    width : 70%;
+}
+
+/////////////////////////////

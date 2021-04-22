@@ -1,0 +1,99 @@
+footer {
+    background-image   : url(../images/sky.png);
+    background-size    : cover;
+    width              : 100%;
+    height             : 100vh;
+    position           : relative;
+    background-position: right;
+    font-weight        : 900;
+    color              : white;
+
+    .overlay {
+        .container {
+            height         : 100%;
+            display        : flex;
+            flex-direction : column;
+            align-items    : center;
+            justify-content: space-evenly;
+
+            .footer-title {
+                text-align: center;
+
+                h1 {
+                    padding-bottom: 30px;
+                }
+
+            }
+
+            .footer-form {
+                display        : flex;
+                flex-direction : column;
+                align-items    : center;
+                justify-content: space-around;
+
+                input {
+                    margin-top   : 20px;
+                    height       : 40px;
+                    border-radius: 10px;
+                    padding-right: 7px;
+                    width        : 200px;
+                    font-size    : 20px;
+
+                    &:focus {
+                        outline   : none;
+                        box-shadow: 0px 3px 10px #111;
+
+                    }
+                }
+
+                button {
+                    margin-top   : 20px;
+                    margin-bottom: 30px;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                }
+            }
+
+            .social {
+
+                ul {
+                    list-style     : none;
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: center;
+                    margin-bottom  : 10px;
+
+                    li {
+                        margin-right: 20px;
+                        margin-left : 20px;
+
+                        a {
+                            display        : flex;
+                            font-size      : 35px;
+                            text-decoration: none;
+                            color          : white;
+                            cursor         : pointer;
+
+                        }
+                    }
+                }
+
+            }
+
+            .description {
+                border-top: 1px solid #fff;
+
+                p {
+                    padding-top: 10px;
+                    text-align : center;
+
+                }
+            }
+        }
+    }
+
+
+}

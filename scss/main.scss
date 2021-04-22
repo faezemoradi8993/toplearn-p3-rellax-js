@@ -1,0 +1,25 @@
+body {
+    font-family: "vazir";
+    direction  : rtl;
+}
+
+* {
+    box-sizing: border-box;
+    padding   : 0;
+    margin    : 0;
+}
+
+@font-face {
+    font-family: "vazir";
+    src        : url(../fonts/vazir.eot) format("eot"),
+        url(../fonts/vazir.ttf)format("truetype"),
+        url(../fonts/vazir.woff)format("woff"),
+        url(../fonts/vazir.woff2)format("woff2"),
+}
+
+@import "base";
+@import "header";
+@import "wolf";
+@import "monkey";
+@import "footer";
+@import "responsive";

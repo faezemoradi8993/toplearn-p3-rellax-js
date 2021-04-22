@@ -1,0 +1,152 @@
+@media screen and (max-width: 1024px) {
+
+    .monkey,
+    .wolf {
+        height: 700px;
+    }
+}
+
+/* When the browser is at least 600px and above */
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 80%;
+    }
+
+    .wolf {
+        height: 850px;
+
+        .wolf-title {
+            text-align    : center;
+            color         : white;
+            padding-bottom: 40px;
+
+            h1 {
+                font-size     : 25px;
+                font-weight   : bold;
+                padding-bottom: 30px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+        }
+
+        .wolf-caption {
+            p {
+                font-size  : 15px;
+                line-height: 3;
+            }
+        }
+    }
+
+    .monkey {
+        height: 850px;
+
+        .container {
+            .monkey-title {
+                padding-bottom: 40px;
+
+                h1 {
+                    font-size     : 25px;
+                    font-weight   : bold;
+                    padding-bottom: 30px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+            }
+
+            .monkey-caption {
+                p {
+                    font-size  : 15px;
+                    line-height: 3;
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 800px;
+    }
+
+    .header {
+        .nav {
+            font-size: 14px;
+
+            ul {
+                li {
+                    padding: 0 10px
+                }
+            }
+        }
+
+        .moon {
+            right: 41%;
+        }
+    }
+
+    p {
+        line-height: 2;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        .nav {
+
+
+            ul {
+                li {
+                    padding: 0 15px
+                }
+            }
+        }
+
+    }
+
+    .monkey,
+    .wolf {
+        height: 700px;
+    }
+
+    .monkey {
+        .container {
+            .monkey-title {
+                padding-bottom: 0px;
+
+                h1 {
+                    font-size     : 25px;
+                    font-weight   : bold;
+                    padding-bottom: 0px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+            }
+
+            .monkey-caption {
+
+                p,
+                ul {
+                    font-size  : 13px;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+
+    .wolf {
+        .wolf-caption {
+
+            p,
+            ul {
+                font-size  : 13px;
+                line-height: 2;
+            }
+        }
+    }
+
+}
